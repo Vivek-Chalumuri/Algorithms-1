@@ -18,7 +18,6 @@ def Karatsuba_Mult(X,Y):
 	
 	ac = Karatsuba_Mult(a,c)
 	bd = Karatsuba_Mult(b,d)
-	k = Karatsuba_Mult(a+b,c+d)
-	r = k - ac -bd
+	k = Karatsuba_Mult(a+b,c+d) - ac - bd
 	
 	return (10**n * ac) + (10**m * k) + bd
